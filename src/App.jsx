@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Lounge from "./components/Lounge/Lounge";
@@ -7,6 +6,8 @@ import Search from "./components/Search/Search";
 import Travelers from "./components/Travelers/Travelers";
 import Subscribers from "./components/Subscribers/Subscribers";
 import Info from "./components/Info/Info";
+import Footer from "./components/Footer/Footer";
+
 const App = () => (
   <div>
     <Navbar />
@@ -17,6 +18,7 @@ const App = () => (
     <Travelers/>
     <Subscribers/>
     <Info/>
+    <Footer/>
   </div>
 );
 
