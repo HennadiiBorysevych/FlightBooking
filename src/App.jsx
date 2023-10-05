@@ -12,6 +12,8 @@ const App = () => (
   <div>
     <Navbar />
     <Home />
+    <Search/>
+
     {/* <Lounge/>
     <Support/>
     <Search/>
