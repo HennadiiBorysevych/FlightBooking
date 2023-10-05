@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { SiConsul } from "react-icons/si";
 import { BsPhoneVibrate } from "react-icons/bs";
 import { AiOutlineGlobal } from "react-icons/ai";
@@ -6,6 +7,12 @@ import { CgMenuGridO } from "react-icons/cg";
 import { logo } from "../../assets/logo.jpg";
 
 const Navbar = () => {
+  const [active, setActive] = useState("navBarMenu");
+
+  const removeNavBar = () => {
+    setActive("navBarMenu");
+  };
+
   return (
     <div className="flex navBar">
       <div className="navBarOne flex">
@@ -34,20 +41,35 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="Logo" />
         </div>
 
-        <div className="navBarMenu">
+        <div className={active}>
           <ul className="menu flex">
-            <li className="listItem">Home</li>
-            <li className="listItem">About</li>
-            <li className="listItem">Offers</li>
-            <li className="listItem">Seats</li>
-            <li className="listItem">Destination</li>
+            <li onClick={removeNavBar} className="listItem">
+              Home
+            </li>
+            <li onClick={removeNavBar} className="listItem">
+              About
+            </li>
+            <li onClick={removeNavBar} className="listItem">
+              Offers
+            </li>
+            <li onClick={removeNavBar} className="listItem">
+              Seats
+            </li>
+            <li onClick={removeNavBar} className="listItem">
+              Destination
+            </li>
           </ul>
 
-          <button className="btn flex btnOne">Contact</button>
+          <button onClick={removeNavBar} className="btn flex btnOne">
+            Contact
+          </button>
         </div>
 
-        <div className="toggleIcon">
-          <CgMenuGridO />
+        <div
+          onClick={() => setActive("navBarMenu showNavBar")}
+          className="toggleIcon"
+        >
+          <CgMenuGridO className="icon" />
         </div>
       </div>
     </div>
