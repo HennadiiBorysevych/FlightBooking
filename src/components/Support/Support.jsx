@@ -24,7 +24,7 @@ const Support = () => {
             </div>
 
             <div className="singleInfo">
-              <span className="number">02</span>
+              <span className="number colorOne">02</span>
               <h4>Chauffeur service at your arrival!</h4>
               <p>
                 Find help with booking and travel plans, see what to expect
@@ -32,8 +32,8 @@ const Support = () => {
               </p>
             </div>
 
-            <div className="singleInfo">
-              <span className="number">03</span>
+            <div className="singleInfo ">
+              <span className="number colorTwo">03</span>
               <h4>Multi-risk travel insurance</h4>
               <p>
                 Find help with booking and travel plans, see what to expect
