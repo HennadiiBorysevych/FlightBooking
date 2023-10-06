@@ -8,10 +8,20 @@ import { logo } from "../../assets/logo.jpg";
 
 const Navbar = () => {
   const [active, setActive] = useState("navBarMenu");
+  const [noBg, addBg] = useState("navBarTwo");
 
   const removeNavBar = () => {
     setActive("navBarMenu");
   };
+
+  const addBgColor = () => {
+    if (window.scrollY >= 10) {
+      addBg("navBarTwo navBar_With_Bg");
+    } else {
+      addBg("navBarTwo");
+    }
+  };
+  window.addEventListener("scroll", addBgColor);
 
   return (
     <div className="flex navBar">
@@ -36,7 +46,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="navBarTwo flex">
+      <div className={noBg}>
         <div className="logoDiv">
           <img src={logo} alt="logo" className="Logo" />
         </div>

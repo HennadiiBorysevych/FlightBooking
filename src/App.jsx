@@ -14,8 +14,8 @@ const App = () => (
     <Home />
     <Search/>
 
-    {/* <Lounge/>
     <Support/>
+    {/* <Lounge/>
     <Search/>
     <Travelers/>
     <Subscribers/>
