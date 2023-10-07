@@ -15,7 +15,7 @@ const App = () => (
     <Search/>
     <Support/>
     <Info/>
-
+    <Lounge/>
     {/* <Lounge/>
     <Search/>
     <Travelers/>
