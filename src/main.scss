@@ -539,7 +539,7 @@ h2 {
             color: #000;
             font-weight: 700;
           }
-          p{
+          p {
             color: var(--PrimaryColor);
             font-size: initial;
             font-style: italic;
@@ -549,7 +549,6 @@ h2 {
         @keyframes animatedBorders {
           0% {
             transform: translateY(0px);
-
           }
           50% {
             transform: translateY(8px);
@@ -558,6 +557,49 @@ h2 {
             transform: translateY(0px);
           }
         }
+
+        &:hover {
+          .travelerName {
+            bottom: 0;
+            transition: 1s ease-in-out;
+          }
+
+          .travelerImage {
+            bottom: 110px;
+            transition: 1s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+.subscribe {
+  background: var(--SecondaryColor);
+
+  .sectionContainer {
+    text-align: center;
+
+    .inputDiv {
+      margin-top: 1rem;
+      flex-direction: column;
+      background: var(--whiteColor);
+      border-radius: 1rem;
+
+      input {
+        border: none;
+        outline: none;
+        background: transparent;
+        padding: 1rem 0.5rem;
+
+        &:placeholder {
+          font-size: 13px;
+          opacity: 0.5;
+        }
+      }
+
+      .btn {
+        width: 100%;
       }
     }
   }
