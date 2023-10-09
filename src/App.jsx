@@ -12,14 +12,13 @@ const App = () => (
   <div>
     <Navbar />
     <Home />
-    <Search/>
-    <Support/>
-    <Info/>
-    <Lounge/>
-    <Travelers/>
-    <Subscribers/>
-    {/*
-    <Footer/> */}
+    <Search />
+    <Support />
+    <Info />
+    <Lounge />
+    <Travelers />
+    <Subscribers />
+    <Footer />
   </div>
 );
 
